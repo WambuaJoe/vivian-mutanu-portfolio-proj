@@ -8,60 +8,78 @@ const HomePage = () => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Main Content Card */}
         <div className="backdrop-blur-md bg-white/10 rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
-          {/* Profile Section */}
-          <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 p-1">
-              <div className="w-full h-full rounded-full bg-gradient-to-r from-purple-300 to-pink-300 flex items-center justify-center text-white text-4xl font-bold">
-                SA
+          {/* Profile Section - Horizontal Layout */}
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 mb-8">
+            {/* Left Side - Name and Title */}
+            <div className="flex-1 text-center md:text-left">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+                Vivian Mutanu
+              </h1>
+              <p className="text-xl md:text-2xl text-purple-200 font-light mb-6">
+                Data Analyst
+              </p>
+              
+              {/* Contact Links - Moved here */}
+              <div className="flex justify-center md:justify-start gap-4">
+                <a 
+                  href="mailto:vivian.mutanu@email.com"
+                  className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
+                >
+                  <Mail className="w-6 h-6 text-white group-hover:text-purple-200" />
+                </a>
+                <a 
+                  href="https://discord.com/users/vivianmutanu"
+                  className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
+                >
+                  <MessageCircle className="w-6 h-6 text-white group-hover:text-purple-200" />
+                </a>
+                <a 
+                  href="https://t.me/vivianmutanu"
+                  className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
+                >
+                  <Send className="w-6 h-6 text-white group-hover:text-purple-200" />
+                </a>
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
-              Vivian Mutanu
-            </h1>
-            <p className="text-xl md:text-2xl text-purple-200 font-light">
-              Data Analyst
-            </p>
+            
+            {/* Right Side - Profile Photo */}
+            <div className="flex-shrink-0">
+              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
+                <img 
+                  src="/src/assets/image.png" 
+                  alt="Vivian Mutanu"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* About Section Title */}
+          <div className="mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center md:text-left">
+              A Curious Architect
+            </h2>
           </div>
 
           {/* About Section */}
           <div className="mb-10">
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed text-center md:text-left">
               Passionate data analyst with a keen eye for transforming raw data into actionable insights. 
               Currently building expertise in Python, SQL, and data visualization tools to help 
               organizations make data-driven decisions.
             </p>
           </div>
 
-          {/* Contact Links */}
-          <div className="flex justify-center gap-4 mb-10">
-            <a 
-              href="mailto:sarah.anderson@email.com"
-              className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
-            >
-              <Mail className="w-6 h-6 text-white group-hover:text-purple-200" />
-            </a>
-            <a 
-              href="https://discord.com/users/sarahanderson"
-              className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
-            >
-              <MessageCircle className="w-6 h-6 text-white group-hover:text-purple-200" />
-            </a>
-            <a 
-              href="https://t.me/sarahanderson"
-              className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
-            >
-              <Send className="w-6 h-6 text-white group-hover:text-purple-200" />
-            </a>
-          </div>
-
           {/* Projects Button */}
-          <Link 
-            to="/projects"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25"
-          >
-            My Projects
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="text-center md:text-left">
+            <Link 
+              to="/projects"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25"
+            >
+              My Projects
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
         </div>
 
         {/* Floating Elements */}
