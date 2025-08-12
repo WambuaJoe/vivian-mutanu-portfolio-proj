@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, MessageCircle, Send, ArrowRight } from 'lucide-react';
+import { Mail, MessageCircle, Linkedin, ArrowRight } from 'lucide-react';
 import profileImage from '../assets/IMG_20200826_172307.jpg';
 
 const HomePage = () => {
@@ -35,10 +35,10 @@ const HomePage = () => {
                   <MessageCircle className="w-6 h-6 text-white group-hover:text-purple-200" />
                 </a>
                 <a 
-                  href="https://t.me/vivianmutanu"
+                  href="https://www.linkedin.com/in/vivian-mutanu-wambua-64b25b112/"
                   className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
                 >
-                  <Send className="w-6 h-6 text-white group-hover:text-purple-200" />
+                  <Linkedin className="w-6 h-6 text-white group-hover:text-purple-200" />
                 </a>
               </div>
             </div>
