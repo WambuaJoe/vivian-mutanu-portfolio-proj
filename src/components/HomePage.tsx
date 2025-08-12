@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, MessageCircle, Send, ArrowRight } from 'lucide-react';
+import profileImage from '../assets/IMG_20200826_172307.jpg';
 
 const HomePage = () => {
   return (
@@ -46,7 +47,7 @@ const HomePage = () => {
             <div className="flex-shrink-0">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
                 <img 
-                  src="../assets/IMG_20200826_172307.jpg" 
+                  src={profileImage}
                   alt="Vivian Mutanu"
                   className="w-full h-full object-cover"
                 />
