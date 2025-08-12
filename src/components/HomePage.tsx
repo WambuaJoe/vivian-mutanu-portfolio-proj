@@ -24,18 +24,26 @@ const HomePage = () => {
               <div className="flex justify-center md:justify-start gap-4">
                 <a 
                   href="mailto:vivian.mutanu@email.com"
+                 target="_blank"
+                 rel="noopener noreferrer"
                   className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
                 >
                   <Mail className="w-6 h-6 text-white group-hover:text-purple-200" />
                 </a>
                 <a 
                   href="https://discord.com/users/vivianmutanu"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 target="_blank"
+                 rel="noopener noreferrer"
                   className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
                 >
                   <MessageCircle className="w-6 h-6 text-white group-hover:text-purple-200" />
                 </a>
                 <a 
                   href="https://www.linkedin.com/in/vivian-mutanu-wambua-64b25b112/"
+                 target="_blank"
+                 rel="noopener noreferrer"
                   className="backdrop-blur-md bg-white/10 hover:bg-white/20 rounded-2xl p-4 transition-all duration-300 hover:scale-105 border border-white/20 group"
                 >
                   <Linkedin className="w-6 h-6 text-white group-hover:text-purple-200" />
